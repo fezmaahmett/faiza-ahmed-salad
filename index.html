@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Cooking Timer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Interactive Cooking Timer</h1>
+</header>
+
+<nav>
+  <a href="#" id="homeLink">Home</a>
+  <a href="#" id="timersLink">Timers</a>
+  <a href="#" id="aboutLink">About</a>
+</nav>
+
+<main>
+
+<!-- Home -->
+<section id="homeSection">
+  <h2>Welcome to Interactive Cooking Timer!</h2>
+</section>
+
+<!-- Timers -->
+<section id="timersSection">
+  <section class="form-section">
+    <h2>Add Timer</h2>
+
+    <form id="timerForm">
+      <input type="text" id="title" placeholder="Step name" required>
+      <input type="number" id="minutes" placeholder="Minutes" required min="1">
+      <button type="submit">Add</button>
+    </form>
+
+    <h3>Preset Recipes</h3>
+    <select id="preset">
+      <option value="">Select</option>
+      <option value="Egg|5">Boiled Egg (5 min)</option>
+      <option value="Pasta|10">Pasta (10 min)</option>
+      <option value="Rice|15">Rice (15 min)</option>
+    </select>
+  </section>
+
+  <section id="timers"></section>
+</section>
+
+<!-- About -->
+<section id="aboutSection" style="display:none;">
+  <h2>About</h2>
+  <p>my namee : Faiza Ahmed</p>
+  <p>ID: C5240019</p>
+  <p>Teacher: Jamila</p>
+  <p>This is an interactive cooking timer application built using HTML, CSS, and JavaScript.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Faiza Ahmed Salad | ID: C5240019</p>
+</footer>
+
+<audio id="alarm">
+  <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
